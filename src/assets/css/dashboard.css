@@ -1,0 +1,112 @@
+body{
+  color: #23415F
+}
+.block-sec1{
+  display: flex;
+  align-items: center;
+}
+.nakedBtn{
+  border: none;
+  background-color: transparent;
+  color: rgb(5, 5, 146);
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+.ellips{
+  white-space: nowrap; 
+  width: 7rem; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+h3{
+  margin-left: 1rem;
+}
+input{
+  height: 2rem;
+  width: 10rem;
+}
+select{
+  margin-left: 1rem;
+  height: 2.5rem;
+  width: 8rem;
+}
+.search-Bar{
+  height: 2rem;
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+.taskBox{
+  padding: .5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ece8fc;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cecee0;
+  font-size: .85rem;
+  box-shadow:0px 0px 2px 1px #ccc;
+  position: relative;
+  width: 90%;
+}
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0rem;
+}
+.mAuto{
+  margin: auto;
+}
+
+.btn{
+  color: white;
+  padding: 0.6rem 1rem;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+
+}
+.taskManager{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.prorityBox{
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  margin: .5rem;
+  max-width: 24rem;
+  width: 100%;
+}
+.secondaryColor{
+  color:#23415F;
+  position: relative;
+  margin: 1rem;
+}
+#changeStatus{
+  border: none;
+    background-color: transparent;
+}
+@media (min-width:1000px){
+  .taskManager{
+    flex-direction: row;
+  }
+  .prorityBox{
+    height: 80vh;
+    max-height: 100vh;
+    overflow-x: auto;
+  }
+  .header{
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 2rem;
+  }
+}
